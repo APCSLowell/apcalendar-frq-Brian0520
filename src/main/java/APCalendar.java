@@ -56,10 +56,11 @@ public class APCalendar
   {
     int firstDay = firstDayOfYear(year);
     int currentDay = dayOfYear(month, day, year) - 1;
-    for(int i = 1; i <= currentDay; i++)
+    for(int i = 1; i <= currentDay; i++){
       firstDay++;
       if(firstDay == 7)
         firstDay = 0;
+    }
     return firstDay;
   }
 }
